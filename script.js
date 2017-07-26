@@ -26,14 +26,16 @@ $("#list").append($item);
 }	
 	
 
-/*
+
 	var runningTotal = 0;
 	items.forEach(function(item) {	
 	
 		runningTotal += item.price; //price of each grocery
-		document.getElementById("total").innerHTML = "$" + runningTotal.toFixed(2);
+		//line below needs to be changed for jQuery
+		//document.getElementById("total").innerHTML = "$" + runningTotal.toFixed(2);
+		$("#total").text("$" + runningTotal.toFixed(2));
 	});
 			console.log ("$" + runningTotal.toFixed(2));
 			 		 
-*/	
+
 // In Michigan sales tax is not actually collected on groceries, but may be used in this exercise regardless
